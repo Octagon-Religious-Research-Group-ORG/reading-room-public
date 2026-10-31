@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ORG Reading Room</title>
+<meta name="description" content="The public shelf of the Octagon Religious Research Group: decks, procedures and proposals ORG has chosen to share, and how to ask for the members' room.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23059669' stroke-width='2.2' stroke-linejoin='round'%3E%3Cpath d='M8.3 2h7.4L22 8.3v7.4L15.7 22H8.3L2 15.7V8.3z'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --primary: #059669; --deep: #064e3b; --mid: #047857; --tint: #d1fae5;
+    --bg: #f7fbf9; --surface: #ffffff; --text: #10241c; --muted: #4b5f57; --line: #cfe3da;
+    --for: #64748b; --focus: #047857;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --primary: #34d399; --deep: #a7f3d0; --mid: #6ee7b7; --tint: #0b2a21;
+      --bg: #08130f; --surface: #0e1d17; --text: #e3f1ea; --muted: #a3bcb1; --line: #1f3a30;
+      --for: #64748b; --focus: #6ee7b7;
+    }
+  }
+  :root[data-theme="dark"] {
+    --primary: #34d399; --deep: #a7f3d0; --mid: #6ee7b7; --tint: #0b2a21;
+    --bg: #08130f; --surface: #0e1d17; --text: #e3f1ea; --muted: #a3bcb1; --line: #1f3a30;
+    --for: #64748b; --focus: #6ee7b7;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  a { color: var(--mid); text-underline-offset: 3px; }
+  a:hover { color: var(--primary); }
+  a:focus-visible, button:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; border-radius: 4px; }
+  .skip { position: absolute; left: -999px; top: 8px; background: var(--surface); padding: 8px 12px; z-index: 2; }
+  .skip:focus { left: 16px; }
+  .wrap { max-width: 860px; margin: 0 auto; padding: 0 16px; }
+  header { border-bottom: 4px solid var(--primary); background: var(--surface); }
+  header .wrap { padding-top: 40px; padding-bottom: 28px; display: grid; grid-template-columns: auto 1fr; gap: 18px; align-items: center; }
+  header svg { width: 64px; height: 64px; }
+  h1 { margin: 0; color: var(--deep); font-size: clamp(1.7rem, 5vw, 2.4rem); line-height: 1.15; letter-spacing: -0.01em; }
+  .lede { margin: 6px 0 0; color: var(--muted); font-style: italic; }
+  main.wrap { padding-top: 28px; padding-bottom: 48px; }
+  h2 { color: var(--deep); font-size: 1.3rem; margin: 0 0 4px; display: flex; align-items: center; gap: 10px; }
+  h2 svg { width: 22px; height: 22px; flex: none; }
+  section { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 20px 22px; margin: 0 0 18px; }
+  section p { margin: 8px 0; }
+  .state { display: inline-block; font-size: .8rem; font-weight: 600; letter-spacing: .02em; color: var(--deep); background: var(--tint); border-radius: 999px; padding: 2px 10px; }
+  ul.links { list-style: none; padding: 0; margin: 10px 0 0; }
+  ul.links li { padding: 10px 0; border-top: 1px solid var(--line); }
+  ul.links li:first-child { border-top: 0; }
+  ul.links .hint { display: block; color: var(--muted); font-size: .92rem; }
+  ol { padding-left: 1.3em; margin: 8px 0; }
+  ol li { margin: 6px 0; }
+  .note { border-left: 4px solid var(--primary); background: var(--tint); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 12px 0 0; }
+  footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); padding: 20px 0 40px; }
+  footer p { margin: 6px 0; }
+  .for { color: #fff; background: var(--for); border-radius: 4px; padding: 1px 7px; font-size: .78rem; font-weight: 600; }
+  @media (max-width: 520px) {
+    body { font-size: 16px; }
+    header .wrap { grid-template-columns: 1fr; padding-top: 28px; gap: 10px; }
+    header svg { width: 48px; height: 48px; }
+    section { padding: 16px; }
+  }
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to the shelves</a>
+<header>
+  <div class="wrap">
+    <svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.3 2h7.4L22 8.3v7.4L15.7 22H8.3L2 15.7V8.3z"/><path d="M12 2v20M2 12h20M4.9 4.9l14.2 14.2M19.1 4.9 4.9 19.1"/></svg>
+    <div>
+      <h1>ORG Reading Room</h1>
+      <p class="lede">The public shelf of the Octagon Religious Research Group: the decks, procedures and proposals ORG has chosen to share.</p>
+    </div>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <section aria-labelledby="decks">
+    <h2 id="decks"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg>Decks</h2>
+    <p><span class="state">coming</span></p>
+    <p>Slide decks that walk a newcomer through ORG's proposals, procedures and the road ahead. ORG's welcome deck is being prepared; when it is published it will be listed here and in ORG's public <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github">.github repository</a>.</p>
+  </section>
+
+  <section aria-labelledby="procedures">
+    <h2 id="procedures"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>Procedures</h2>
+    <p><span class="state">opening, nothing published yet</span></p>
+    <p>A <strong>proposal</strong> asks for a decision; a <strong>procedure</strong> says how an approved thing is done, step by step. ORG keeps its procedures in a private repository for members. The ones its officers choose to share go to a public shelf of their own.</p>
+    <ul class="links">
+      <li><a href="https://github.com/Octagon-Religious-Research-Group-ORG/ops-standard-operating-procedures-public">ORG procedures, public</a>
+        <span class="hint">Empty until an officer adds a procedure to the list of what may be published.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="proposals">
+    <h2 id="proposals"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 12h-5"/><path d="M15 8h-5"/><path d="M19 17V5a2 2 0 0 0-2-2H4"/><path d="M8 21h12a2 2 0 0 0 2-2v-1a1 1 0 0 0-1-1H11a1 1 0 0 0-1 1v1a2 2 0 1 1-4 0V5a2 2 0 1 0-4 0v2a1 1 0 0 0 1 1h3"/></svg>Proposals</h2>
+    <p><span class="state">members only, for now</span></p>
+    <p>ORG decides together: each proposal goes to a vote of the members, and the outcome is written into its decisions log. The proposals themselves are private to ORG's members; there is no public preview of them yet. What ORG has decided shows up in its plain-language record, the <a href="https://octagon-religious-research-group-org.github.io/changelog-astro-public/">ORG AstroLog</a>.</p>
+  </section>
+
+  <section aria-labelledby="access">
+    <h2 id="access"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="var(--primary)"/></svg>How to ask for the members' room</h2>
+    <p>Behind this shelf is ORG's private reading room, where members read drafts before they are public. It opens with a free GitHub account that ORG has invited.</p>
+    <ol>
+      <li>Make a free account at <a href="https://github.com/signup">github.com</a> and turn on two-factor authentication.</li>
+      <li>Ask to join, using one of the addresses ORG publishes on its <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/CONTACTS.md">contacts page</a>: <a href="mailto:org@orgspirituality.org">org@orgspirituality.org</a>, or <a href="https://t.me/ORG_Spirituality">ORG (Public) on Telegram</a>. Say which GitHub account is yours.</li>
+      <li>When an officer says yes, you get an invitation from GitHub by email. Accept it, and the reading room opens in your browser.</li>
+    </ol>
+    <p class="note">Becoming a member of ORG is a separate step, described on <a href="https://orgspirituality.org/join">orgspirituality.org/join</a>. Never send a password or a code to anyone who asks for one; nobody at ORG ever needs it.</p>
+  </section>
+
+  <section aria-labelledby="elsewhere">
+    <h2 id="elsewhere"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>Elsewhere</h2>
+    <ul class="links">
+      <li><a href="https://orgspirituality.org">orgspirituality.org</a><span class="hint">The official site: beliefs, community, research and offerings.</span></li>
+      <li><a href="https://octagon-religious-research-group-org.github.io/">Entry portal</a><span class="hint">ORG's front door on GitHub, with a map of everything.</span></li>
+      <li><a href="https://octagon-religious-research-group-org.github.io/changelog-astro-public/">ORG AstroLog</a><span class="hint">What changed, and who did the work.</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p><span class="for">For</span> visitors. This page is the public half of ORG's reading room. Only what an officer has listed ever reaches it, after an automatic safety check; nobody edits it by hand.</p>
+    <p>Written content: <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/LICENSE-CONTENT">CC BY-SA 4.0</a>. ORG's names and marks are reserved. Icons: Lucide (ISC).</p>
+  </div>
+</footer>
+</body>
+</html>
