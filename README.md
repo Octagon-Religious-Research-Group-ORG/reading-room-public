@@ -1,3 +1,5 @@
+<img src="assets/banner.svg" width="100%" alt="ORG's emerald banner: an octagon drawing itself, eight corners arriving in turn">
+
 <div align="center">
 
 # ORG Reading Room, public
