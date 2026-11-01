@@ -56,6 +56,9 @@
   .note { border-left: 4px solid var(--primary); background: var(--tint); padding: 10px 14px; border-radius: 0 8px 8px 0; margin: 12px 0 0; }
   footer { color: var(--muted); font-size: .88rem; border-top: 1px solid var(--line); padding: 20px 0 40px; }
   footer p { margin: 6px 0; }
+  section a { overflow-wrap: anywhere; }
+  a.pending { color: var(--muted); text-decoration: none; pointer-events: none; }
+  a.pending::after { content: " · not published yet"; font-size: .85rem; }
   .for { color: #fff; background: var(--for); border-radius: 4px; padding: 1px 7px; font-size: .78rem; font-weight: 600; }
   @media (max-width: 520px) {
     body { font-size: 16px; }
@@ -78,19 +81,40 @@
 </header>
 
 <main id="main" class="wrap">
+  <section aria-labelledby="start">
+    <h2 id="start"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20H2"/><path d="M11 4.562v16.157a1 1 0 0 0 1.242.97L19 20V5.562a2 2 0 0 0-1.515-1.94l-4-1A2 2 0 0 0 11 4.561z"/><path d="M11 4H8a2 2 0 0 0-2 2v14"/><path d="M14 12h.01"/><path d="M22 20h-3"/></svg>Start here</h2>
+    <p>New to ORG, or to GitHub? Three pages, in this order.</p>
+    <ul class="links">
+      <li><a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/decks/welcome.marp.pdf">Welcome to ORG, as slides</a><span class="hint">Seven stops from "I have no GitHub account" to "I read, I answer, and my helper reads with me". Also as <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/decks/welcome.marp.md">markdown</a> for your helper.</span></li>
+      <li><a data-pending href="start-here/000-start-here.pdf">000 Start here</a><span class="hint">How an ORG proposal reads, how to answer, and how to bring your AI helper.</span></li>
+      <li><a data-pending href="procedures/SOP-COM-001-new-to-github-your-first-hour.pdf">New to GitHub: your first hour</a><span class="hint">SOP-COM-001, the full first hour, step by step.</span></li>
+    </ul>
+  </section>
+
   <section aria-labelledby="decks">
     <h2 id="decks"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 3h20"/><path d="M21 3v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V3"/><path d="m7 21 5-5 5 5"/></svg>Decks</h2>
-    <p><span class="state">coming</span></p>
-    <p>Slide decks that walk a newcomer through ORG's proposals, procedures and the road ahead. ORG's welcome deck is being prepared; when it is published it will be listed here and in ORG's public <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github">.github repository</a>.</p>
+    <p><span class="state">one deck</span></p>
+    <p>Slide decks that walk a newcomer through ORG's proposals, procedures and the road ahead. They live in ORG's public <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/tree/main/decks">.github repository</a>; this shelf links to them rather than keeping a second copy.</p>
+    <ul class="links">
+      <li><a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/decks/welcome.marp.pdf">Welcome to ORG</a><span class="hint">PDF slides · <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/decks/welcome.marp.html">HTML</a> · <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/decks/welcome.marp.md">markdown</a></span></li>
+    </ul>
   </section>
 
   <section aria-labelledby="procedures">
     <h2 id="procedures"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="19" r="3"/><path d="M9 19h8.5a3.5 3.5 0 0 0 0-7h-11a3.5 3.5 0 0 1 0-7H15"/><circle cx="18" cy="5" r="3"/></svg>Procedures</h2>
-    <p><span class="state">opening, nothing published yet</span></p>
+    <p><span class="state">the universal procedures, as officers say yes</span></p>
     <p>A <strong>proposal</strong> asks for a decision; a <strong>procedure</strong> says how an approved thing is done, step by step. ORG keeps its procedures in a private repository for members. The ones its officers choose to share go to a public shelf of their own.</p>
     <ul class="links">
+      <li><a data-pending href="procedures/SOP-COM-001-new-to-github-your-first-hour.pdf">SOP-COM-001 · New to GitHub: your first hour</a><span class="hint">Your own account and password, two-factor, the invitation, five words, the room, a helper.</span></li>
+      <li><a data-pending href="procedures/SOP-OPS-001-how-a-change-travels.pdf">SOP-OPS-001 · How a change travels</a><span class="hint">Rehearsal, Promote, live, and the public twin.</span></li>
+      <li><a data-pending href="procedures/SOP-OPS-002-pull-requests-and-promotes.pdf">SOP-OPS-002 · Pull requests and Promotes</a><span class="hint">Who opens, who merges, and why merge and never squash.</span></li>
+      <li><a data-pending href="procedures/SOP-OPS-003-private-houses-everything-public-lanes-witness.pdf">SOP-OPS-003 · Private houses everything, public lanes witness</a><span class="hint">How a page reaches this shelf, and the check that reads every file first.</span></li>
+      <li><a data-pending href="procedures/SOP-IT-001-vpn-dns-resolver-stalls.pdf">SOP-IT-001 · VPN and DNS resolver stalls</a><span class="hint">How to tell, how to check, how to fix.</span></li>
+      <li><a data-pending href="procedures/SOP-IT-002-reading-room-and-helper-access.pdf">SOP-IT-002 · Reading room and helper access</a><span class="hint">Browser first, a read-only token only if a helper truly needs one.</span></li>
+      <li><a data-pending href="procedures/SOP-IT-003-observer-dashboards-local-by-default.pdf">SOP-IT-003 · Observer dashboards</a><span class="hint">Local by default, remote access on purpose.</span></li>
+      <li><a data-pending href="procedures/SOP-GOV-002-github-collaboration.pdf">SOP-GOV-002 · GitHub collaboration</a><span class="hint">Owners, teams, issues, discussions, pull requests and Pages, and why access goes by teams.</span></li>
       <li><a href="https://github.com/Octagon-Religious-Research-Group-ORG/ops-standard-operating-procedures-public">ORG procedures, public</a>
-        <span class="hint">Empty until an officer adds a procedure to the list of what may be published.</span></li>
+        <span class="hint">The same procedures as pages you can read on GitHub, with their icons.</span></li>
     </ul>
   </section>
 
@@ -102,7 +126,7 @@
 
   <section aria-labelledby="access">
     <h2 id="access"><svg viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"/><circle cx="16.5" cy="7.5" r=".5" fill="var(--primary)"/></svg>How to ask for the members' room</h2>
-    <p>Behind this shelf is ORG's private reading room, where members read drafts before they are public. It opens with a free GitHub account that ORG has invited.</p>
+    <p>Behind this shelf is ORG's private reading room, where members read drafts before they are public: <a href="https://github.com/Octagon-Religious-Research-Group-ORG/reading-room">github.com/Octagon-Religious-Research-Group-ORG/reading-room</a>. It opens with a free GitHub account that ORG has invited; until then the link shows GitHub's "page not found", which only means "not invited yet" or "signed out".</p>
     <ol>
       <li>Make a free account at <a href="https://github.com/signup">github.com</a> and turn on two-factor authentication.</li>
       <li>Ask to join, using one of the addresses ORG publishes on its <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/CONTACTS.md">contacts page</a>: <a href="mailto:org@orgspirituality.org">org@orgspirituality.org</a>, or <a href="https://t.me/ORG_Spirituality">ORG (Public) on Telegram</a>. Say which GitHub account is yours.</li>
@@ -127,5 +151,14 @@
     <p>Written content: <a href="https://github.com/Octagon-Religious-Research-Group-ORG/.github/blob/main/LICENSE-CONTENT">CC BY-SA 4.0</a>. ORG's names and marks are reserved. Icons: Lucide (ISC).</p>
   </div>
 </footer>
+<script>
+  /* A link marked data-pending points at a file this room receives from the members' room only after an officer's yes
+     and the next sync. Until the file is here, the link is shown as "not published yet" instead of leading to a 404. */
+  document.querySelectorAll('a[data-pending]').forEach(function (a) {
+    fetch(a.getAttribute('href'), { method: 'HEAD' }).then(function (r) {
+      if (!r.ok) { a.classList.add('pending'); a.setAttribute('aria-disabled', 'true'); a.removeAttribute('href'); }
+    }).catch(function () {});
+  });
+</script>
 </body>
 </html>
