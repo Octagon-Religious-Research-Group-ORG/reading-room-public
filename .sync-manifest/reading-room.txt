@@ -1,0 +1,9 @@
+start-here/000-start-here.pdf
+procedures/SOP-COM-001-new-to-github-your-first-hour.pdf
+procedures/SOP-OPS-001-how-a-change-travels.pdf
+procedures/SOP-OPS-002-pull-requests-and-promotes.pdf
+procedures/SOP-OPS-003-private-houses-everything-public-lanes-witness.pdf
+procedures/SOP-IT-001-vpn-dns-resolver-stalls.pdf
+procedures/SOP-IT-002-reading-room-and-helper-access.pdf
+procedures/SOP-IT-003-observer-dashboards-local-by-default.pdf
+procedures/SOP-GOV-002-github-collaboration.pdf
